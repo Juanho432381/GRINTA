@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOCUMENTO</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="menu container">
+        <img class="logo-1" src="images/logo.svg" alt="LOGO PRINCIPAL">
+        <label for="menu">
+            <input type="checkbox" id="menu" />
+            <img src="images/menu.png" class="menu-icono" alt="ICONO MENÚ">
+        </label>
+
+        <nav class="navbar">
+            <div class="menu-1">
+                <ul>
+                    <li><a href="#">INICIO</a></li>
+                    <li><a href="#">SERVICIOS</a></li>
+                    <li><a href="#">PRODUCTOS</a></li>
+                </ul>
+            </div>
+
+            <img class="logo-2" src="images/logo.svg" alt="LOGO SECUNDARIO">
+
+            <div class="menu-2">
+                <ul>
+                    <li><a href="#">HORARIO</a></li>
+                </ul>
+            </div>
+
+            <div class="socials">
+                <a href="#"><img src="images/s1.svg" alt="FACEBOOK"></a>
+                <a href="#"><img src="images/s2.svg" alt="TWITTER"></a>
+                <a href="#"><img src="images/s3.svg" alt="INSTAGRAM"></a>
+            </div>
+        </nav>
+    </div>
+
+    <div class="header-content container">
+        <div class="swiper mySwiper-1">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                    <div class="slider">
+                        <div class="slider-text">
+                            <h1>HAMBURGUESA</h1>
+                            <p>
+                                LOREM IPSUM DOLOR SIT AMET CONSECTETUR ADIPISICING ELIT. QUISQUAM, VOLUPTATUM.
+                            </p>
+                            <div class="botones">
+                                <a href="#" class="btn">COMPRAR</a>
+                                <a href="#" class="btn">MENÚ</a>
+                            </div>
+                        </div>
+                        <div class="slider-img">
+                            <img src="images/slider1.png" alt="HAMBURGUESA">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="slider">
+                        <div class="slider-text">
+                            <h1>TORTA</h1>
+                            <p>
+                                LOREM IPSUM DOLOR SIT AMET CONSECTETUR ADIPISICING ELIT. QUISQUAM, VOLUPTATUM.
+                            </p>
+                            <div class="botones">
+                                <a href="#" class="btn">COMPRAR</a>
+                                <a href="#" class="btn">MENÚ</a>
+                            </div>
+                        </div>
+                        <div class="slider-img">
+                            <img src="images/slider2.png" alt="TORTA">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="slider">
+                        <div class="slider-text">
+                            <h1>HAHAHA</h1>
+                            <p>
+                                LOREM IPSUM DOLOR SIT AMET CONSECTETUR ADIPISICING ELIT. QUISQUAM, VOLUPTATUM.
+                            </p>
+                            <div class="botones">
+                                <a href="#" class="btn">COMPRAR</a>
+                                <a href="#" class="btn">MENÚ</a>
+                            </div>
+                        </div>
+                        <div class="slider-img">
+                            <img src="images/slider3.png" alt="IMAGEN 3">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+</header>
+
+<main class="productos">
+    <div class="container">
+
+        <input type="radio" name="tab" id="tab1" checked="checked" class="tabInput" value="1" title="SELECCIONAR TAB 1">
+        <label for="tab1">Hamburguesa</label>
+
+        <div class="tab">
+            <div class="swiper mySwiper-2" id="swiper-1-">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <div class="producto">
+                            <img src="images/food1.png" alt="HAMBURGUESA 1">
+                            <h3>Hamburguesa Clásica</h3>
+                            <p>Deliciosa hamburguesa con carne de res, lechuga, tomate y cebolla.</p>
+                            <span>$5.99</span>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="producto">
+                            <img src="images/producto2.png" alt="HAMBURGUESA 2">
+                            <h3>Hamburguesa BBQ</h3>
+                            <p>Jugosa hamburguesa con salsa BBQ, tocino y queso cheddar.</p>
+                            <span>$6.99</span>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="producto">
+                            <img src="image alt="HAMBURGUESA 3">
+                            <h3>Hamburguesa Vegetariana</h3>
+                            <p>Hamburguesa a base de garbanzos, con aguacate y salsa de yogur.</p>
+                            <span>$5.49</span>
+                        </div>
+                    </div>
+
+
+
+
+
+
+                     
+
+                </div>
+            </div> <!-- Fin swiper mySwiper-2 -->
+
+        </div> <!-- Fin tab -->
+    </div> <!-- Fin container -->
+</main>
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

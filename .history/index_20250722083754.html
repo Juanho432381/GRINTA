@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOCUMENTO</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="menu container">
+        <img class="logo-1" src="images/logo.svg" alt="LOGO PRINCIPAL">
+        <label for="menu">
+            <input type="checkbox" id="menu" />
+            <img src="images/menu.png" class="menu-icono" alt="ICONO MENÚ">
+        </label>
+
+        <nav class="navbar">
+            <div class="menu-1">
+                <ul>
+                    <li><a href="#">INICIO</a></li>
+                    <li><a href="#">SERVICIOS</a></li>
+                    <li><a href="#">PRODUCTOS</a></li>
+                </ul>
+            </div>
+
+            <img class="logo-2" src="images/logo.svg" alt="LOGO SECUNDARIO">
+
+            <div class="menu-2">
+                <ul>
+                    <li><a href="#">HORARIO</a></li>
+                </ul>
+            </div>
+
+            <div class="socials">
+                <a href="#"><img src="images/s1.svg" alt="FACEBOOK"></a>
+                <a href="#"><img src="images/s2.svg" alt="TWITTER"></a>
+                <a href="#"><img src="images/s3.svg" alt="INSTAGRAM"></a>
+            </div>
+        </nav>
+    </div>
+
+    <div class="header-content container">
+        <div class="swiper mySwiper-1">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                    <div class="slider">
+                        <div class="slider-text">
+                            <h1>HAMBURGUESA</h1>
+                            <p>
+                                LOREM IPSUM DOLOR SIT AMET CONSECTETUR ADIPISICING ELIT. QUISQUAM, VOLUPTATUM.
+                            </p>
+                            <div class="botones">
+                                <a href="#" class="btn">COMPRAR</a>
+                                <a href="#" class="btn">MENÚ</a>
+                            </div>
+                        </div>
+                        <div class="slider-img">
+                            <img src="images/slider1.png" alt="HAMBURGUESA">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="slider">
+                        <div class="slider-text">
+                            <h1>TORTA</h1>
+                            <p>
+                                LOREM IPSUM DOLOR SIT AMET CONSECTETUR ADIPISICING ELIT. QUISQUAM, VOLUPTATUM.
+                            </p>
+                            <div class="botones">
+                                <a href="#" class="btn">COMPRAR</a>
+                                <a href="#" class="btn">MENÚ</a>
+                            </div>
+                        </div>
+                        <div class="slider-img">
+                            <img src="images/slider2.png" alt="TORTA">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="slider">
+                        <div class="slider-text">
+                            <h1>HAHAHA</h1>
+                            <p>
+                                LOREM IPSUM DOLOR SIT AMET CONSECTETUR ADIPISICING ELIT. QUISQUAM, VOLUPTATUM.
+                            </p>
+                            <div class="botones">
+                                <a href="#" class="btn">COMPRAR</a>
+                                <a href="#" class="btn">MENÚ</a>
+                            </div>
+                        </div>
+                        <div class="slider-img">
+                            <img src="images/slider3.png" alt="IMAGEN 3">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+</header>
+<main class="productos">
+    <div class="container">
+
+        <!-- TAB 1 -->
+        <input type="radio" name="tab" id="tab1" checked="checked" class="tabInput" value="1" title="SELECCIONAR TAB 1">
+        <label for="tab1">Hamburguesa</label>
+
+        <div class="tab">
+            <div class="swiper mySwiper-2" id="swiper-1-">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <div class="producto">
+                            <img src="images/food1.png" alt="HAMBURGUESA 1">
+                            <h3>Hamburguesa Clásica</h3>
+                            <p>Deliciosa hamburguesa con carne de res, lechuga, tomate y cebolla.</p>
+                            <span>$5.99</span>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="producto">
+                            <img src="images/food2.png" alt="HAMBURGUESA 2">
+                            <h3>Hamburguesa BBQ</h3>
+                            <p>Jugosa hamburguesa con salsa BBQ, tocino y queso cheddar.</p>
+                            <span>$6.99</span>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="producto">
+                            <img src="images/food3.png" alt="HAMBURGUESA 3">
+                            <h3>Hamburguesa Vegetariana</h3>
+                            <p>Hamburguesa a base de garbanzos, con aguacate y salsa de yogur.</p>
+                            <span>$5.49</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- TAB 2 -->
+        <input type="radio" name="tab" id="tab2" class="tabInput" value="2" title="SELECCIONAR TAB 2">
+        <label for="tab2">Torta</label>
+
+        <div class="tab">
+            <div class="swiper mySwiper-2" id="swiper-2-">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <div class="producto">
+                            <img src="images/food1.png" alt="TORTA 1">
+                            <h3>Torta de Chocolate</h3>
+                            <p>Suave torta de chocolate con cobertura cremosa.</p>
+                            <span>$4.99</span>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="producto">
+                            <img src="images/food2.png" alt="TORTA 2">
+                            <h3>Torta de Vainilla</h3>
+                            <p>Torta esponjosa con glaseado de vainilla y frutas.</p>
+                            <span>$4.50</span>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="producto">
+                            <img src="images/food3.png" alt="TORTA 3">
+                            <h3>Torta de Fresa</h3>
+                            <p>Relleno de fresas naturales con crema batida.</p>
+                            <span>$5.20</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- TAB 3 -->
+        <input type="radio" name="tab" id="tab3" class="tabInput" value="3" title="SELECCIONAR TAB 3">
+        <label for="tab3">Hahaha</label>
+
+        <div class="tab">
+            <div class="swiper mySwiper-2" id="swiper-3-">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <div class="producto">
+                            <img src="images/food4.png" alt="HAHAHA 1">
+                            <h3>Hahaha 1</h3>
+                            <p>Descripción divertida para producto 1.</p>
+                            <span>$3.99</span>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="producto">
+                            <img src="images/food5.png" alt="HAHAHA 2">
+                            <h3>Hahaha 2</h3>
+                            <p>Descripción divertida para producto 2.</p>
+                            <span>$4.25</span>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="producto">
+                            <img src="images/food6.png" alt="HAHAHA 3">
+                            <h3>Hahaha 3</h3>
+                            <p>Descripción divertida para producto 3.</p>
+                            <span>$4.75</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+</main>
+
+
+<section>class="info container">
+    <div class="info-img">
+        <img src="images/info.png" alt="">
+    </div>
+    <div class="info-text">
+        <h2>¡INFORMACION!</h2>
+        <p>
+            Aquí encontrarás las mejores hamburguesas y tortas de la ciudad. ¡Disfruta de nuestros deliciosos productos y
+            no olvides visitar nuestro menú para más opciones!
+        </p>
+        <a href="#" class="btn-2">MAS INFORMACION</a>
+
+</section>
+
+<section> class="Horario"</section>
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
