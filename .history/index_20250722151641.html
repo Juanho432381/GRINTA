@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRINTA - Tienda de Ropa Urbana</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+    <div class="menu container">
+        <img class="logo-1" src="images/LogoGrinta.jpg" alt="Logo GRINTA">
+        <label for="menu">
+            <input type="checkbox" id="menu" />
+            <img src="images/menu.png" class="menu-icono" alt="Menú">
+        </label>
+
+        <nav class="navbar">
+            <div class="menu-1">
+                <ul>
+                    <li><a href="#">INICIO</a></li>
+                    <li><a href="#">COLECCIONES</a></li>
+                    <li><a href="#">TIENDA</a></li>
+                </ul>
+            </div>
+
+            <img class="logo-2" src="images/LogoGrinta.jpg" alt="Logo GRINTA">
+
+            <div class="menu-2">
+                <ul>
+                    <li><a href="#">TALLAS</a></li>
+                </ul>
+            </div>
+
+            <div class="socials">
+                <a href="#"><img src="images/s1.svg" alt="Facebook GRINTA"></a>
+                <a href="#"><img src="images/s2.svg" alt="Instagram GRINTA"></a>
+                <a href="#"><img src="images/s3.svg" alt="WhatsApp GRINTA"></a>
+            </div>
+        </nav>
+    </div>
+
+    <!-- SLIDER PRINCIPAL -->
+    <div class="header-content container">
+        <div class="swiper mySwiper-1">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="slider">
+                        <div class="slider-text">
+                            <h1>COLECCIÓN OTOÑO</h1>
+                            <p>Nuevos diseños exclusivos - Envíos gratis</p>
+                            <div class="botones">
+                                <a href="#" class="btn">COMPRAR</a>
+                                <a href="#" class="btn">VER COLECCIÓN</a>
+                            </div>
+                        </div>
+                        <div class="slider-img">
+                            <img src="images/CAMISA6.jpg" alt="Colección Otoño GRINTA">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+</header>
+
+<!-- PRODUCTOS -->
+<main class="productos">
+    <div class="container">
+        <!-- TAB 1 - CAMISETAS -->
+        <input type="radio" name="tab" id="tab1" checked="checked" class="tabInput" value="1">
+        <label for="tab1">CAMISETAS</label>
+
+        <!-- TAB 2 - ACCESORIOS -->
+        <input type="radio" name="tab" id="tab2" class="tabInput" value="2">
+        <label for="tab2">ACCESORIOS</label>
+
+        <!-- CONTENIDO TAB CAMISETAS -->
+        <div class="tab">
+            <div class="swiper mySwiper-2" id="swiper-1-">
+                <div class="swiper-wrapper">
+                    <!-- Producto 1 -->
+                    <div class="swiper-slide">
+                        <div class="producto">
+                            <img src="images/CAMISA2.jpg" alt="Camiseta GRINTA Classic">
+                            <h3>GRINTA Classic</h3>
+                            <p>Tallas: S - M - L - XL</p>
+                            <span>$90.000</span>
+                        </div>
+                    </div>
+
+                    <!-- Producto 2 -->
+                    <div class="swiper-slide">
+                        <div class="producto">
+                            <img src="images/CAMISA1.jpg" alt="Camiseta GRINTA Negra">
+                            <h3>GRINTA Black</h3>
+                            <p>Tallas: M - L - XL</p>
+                            <span>$95.000</span>
+                        </div>
+                    </div>
+
+                    <!-- Producto 3 -->
+                    <div class="swiper-slide">
+                        <div class="producto">
+                            <img src="images/CAMISA6.jpg" alt="Camiseta GRINTA Estampada">
+                            <h3>GRINTA Print</h3>
+                            <p>Tallas: M - L - XL</p>
+                            <span>$95.000</span>
+                        </div>
+                    </div>
+
+                    <!-- Producto 4 -->
+                    <div class="swiper-slide">
+                        <div class="producto">
+                            <img src="images/CAMISA8.jpg" alt="Camiseta GRINTA Blanca">
+                            <h3>GRINTA White</h3>
+                            <p>Tallas: M - L - XL</p>
+                            <span>$95.000</span>
+                        </div>
+                    </div>
+
+                    <!-- Producto 5 -->
+                    <div class="swiper-slide">
+                        <div class="producto">
+                            <img src="images/CAMISA4.jpg" alt="Camiseta GRINTA Premium">
+                            <h3>GRINTA Premium</h3>
+                            <p>Tallas: S - M - L</p>
+                            <span>$85.000</span>
+                        </div>
+                    </div>
+
+                    <!-- Producto 6 -->
+                    <div class="swiper-slide">
+                        <div class="producto">
+                            <img src="images/CAMISA5.jpg" alt="Camiseta GRINTA Limited">
+                            <h3>GRINTA Limited</h3>
+                            <p>Tallas: M - L - XL</p>
+                            <span>$120.000</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CONTENIDO TAB ACCESORIOS -->
+        <div class="tab">
+            <div class="swiper mySwiper-2" id="swiper-2-">
+                <div class="swiper-wrapper">
+                    <!-- Producto 1 -->
+                    <div class="swiper-slide">
+                        <div class="producto">
+                            <img src="images/LOGOSTICKER.jpg" alt="Sticker GRINTA">
+                            <h3>STICKER GRINTA</h3>
+                            <p>Variedad de diseños</p>
+                            <span>$5.000</span>
+                        </div>
+                    </div>
+
+                    <!-- Producto 2 -->
+                    <div class="swiper-slide">
+                        <div class="producto">
+                            <img src="images/CAMISA7.jpg" alt="Short Deportivo">
+                            <h3>GRINTA EXPIRED</h3>
+                            <p>Tallas: 28 - 30 - 32</p>
+                            <span>$95.000</span>
+                        </div>
+                    </div>
+
+                    <!-- Producto 3 -->
+                    <div class="swiper-slide">
+                        <div class="producto">
+                            <img src="images/CAMISA10.jpg" alt="Gorra Clásica">
+                            <h3>GRINTA CLASICA</h3>
+                            <p>Unisex - Ajustable</p>
+                            <span>$100.000</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<!-- INFORMACIÓN -->
+<section class="info container">
+    <div class="info-text">
+        <h2>¡SOBRE GRINTA!</h2>
+        <p>
+            Marca colombiana de ropa urbana con diseños exclusivos. 
+            Calidad premium para personas auténticas.
+        </p>
+        <a href="#" class="btn-2">CONOCE MÁS</a>
+    </div>
+</section>
+
+<!-- HORARIO -->
+<section class="Horario">
+    <div class="Horario-info container">
+        <h2>HORARIO DE ATENCIÓN</h2>
+        <div class="horario-txt">
+            <p>
+                LUNES A VIERNES: 9:00 AM - 7:00 PM<br>
+                SÁBADO: 10:00 AM - 5:00 PM<br>
+                DOMINGO: CERRADO
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <div class="links">
+       <h4>GRINTA</h4> 
+       <ul>
+        <li><a href="#">Nosotros</a></li>
+        <li><a href="#">Políticas</a></li>
+        <li><a href="#">Términos</a></li>
+       </ul>
+    </div>
+    <div class="links">
+       <h4>AYUDA</h4> 
+       <ul>
+        <li><a href="#">Tallas</a></li>
+        <li><a href="#">Envíos</a></li>
+        <li><a href="#">Pagos</a></li>
+       </ul>
+    </div>
+    <div class="links">
+       <h4>REDES SOCIALES</h4> 
+       <div class="socials">
+            <a href="#"><img src="images/s1.svg" alt="Facebook"></a>
+            <a href="#"><img src="images/s2.svg" alt="Instagram"></a>
+            <a href="#"><img src="images/s3.svg" alt="WhatsApp"></a>
+        </div>
+    </div>
+</footer>
+
+<!-- SCRIPTS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

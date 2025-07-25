@@ -1,0 +1,453 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+/* Reset y estilos generales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  background-color: #080202;
+  font-family: "Poppins", sans-serif;
+  color: #f0f0f0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Estilos del Swiper */
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 25px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #db241d;
+}
+
+.swiper-pagination-bullet {
+  background: #d3d2d2;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background: #db241d;
+}
+
+/* Header y menú */
+.menu {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+}
+
+.menu-1 {
+  margin-left: 180px;
+}
+
+.menu-2 {
+  margin-left: 180px;
+  display: flex;
+  align-items: center;
+}
+
+.logo-1 {
+  width: 0;
+}
+
+.logo-2 {
+  width: 100px;
+  border-color:2PX #ffffff;
+}
+
+/* Sociales */
+.socials {
+  display: flex;
+}
+
+.social {
+  margin: 0 10px;
+  height: 40px;
+  width: 40px;
+  border: 1px solid #db241d;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+.social:hover {
+  background-color: #db241d;
+}
+
+.social img {
+  margin: 8px 0 0 10px;
+}
+
+/* Navegación */
+.menu .navbar ul li {
+  position: relative;
+  float: left;
+}
+
+.menu .navbar ul li a {
+  font-size: 18px;
+  padding: 20px;
+  color: #ffffff;
+  display: block;
+  transition: color 0.3s ease;
+}
+
+.menu .navbar ul li a:hover {
+  color: #db241d;
+}
+
+/* Menú hamburguesa (mobile) */
+#menu {
+  display: none;
+}
+
+.menu-icono {
+  width: 25px;
+}
+
+.menu label {
+  cursor: pointer;
+  display: none;
+}
+
+/* Contenido principal */
+.header-content {
+  margin-top: 200px;
+  padding-bottom: 50px;
+}
+
+.slider {
+  display: flex;
+  align-items: center;
+}
+
+.slider-text {
+  margin-left: 85px;
+  width: 50%;
+}
+
+.slider-text h1 {
+  font-size: 70px;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.slider-text p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.slider-img {
+  width: 50%;
+  text-align: center;
+}
+
+.slider-img img {
+  max-width: 60%;
+  height: auto;
+}
+
+/* Botones */
+.btn {
+  display: inline-block;
+  padding: 12px 30px;
+  background-color: #db241d;
+  color: #ffffff;
+  border-radius: 5px;
+  margin-right: 15px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #b51e18;
+  transform: translateY(-3px);
+}
+
+.btn-2 {
+  display: inline-block;
+  padding: 12px 30px;
+  border: 1px solid #db241d;
+  color: #ffffff;
+  border-radius: 5px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-2:hover {
+  background-color: #db241d;
+}
+
+/* Productos */
+.productos {
+  padding: 100px 0;
+}
+
+.tabInput {
+  display: none;
+}
+
+.tabInput + label {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-right: 10px;
+  background-color: #1a1a1a;
+  color: #ffffff;
+  cursor: pointer;
+  border-radius: 5px 5px 0 0;
+}
+
+.tabInput:checked + label {
+  background-color: #db241d;
+}
+
+.tab {
+  display: none;
+  padding: 30px 0;
+}
+
+.tabInput:checked ~ .tab {
+  display: block;
+}
+
+.producto {
+  background-color: #1a1a1a;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.producto:hover {
+  transform: translateY(-10px);
+}
+
+.producto img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.producto h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.producto p {
+  margin-bottom: 15px;
+  color: #d3d2d2;
+}
+
+.producto span {
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  color: #db241d;
+}
+
+/* Secciones */
+.info {
+  display: flex;
+  align-items: center;
+  padding: 80px 0;
+}
+
+.info-img {
+  width: 50%;
+}
+
+.info-img img {
+  max-width: 100%;
+  height: auto;
+}
+
+.info-text {
+  width: 50%;
+  padding-left: 50px;
+}
+
+.info-text h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.info-text p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.Horario,
+.telefono,
+.redes-sociales {
+  padding: 60px 0;
+  text-align: center;
+}
+
+.Horario h2,
+.telefono h2,
+.redes-sociales h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.horario-txt p {
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+/* Mapa */
+.map {
+  width: 100%;
+  height: 450px;
+  border: 0;
+  margin: 50px 0;
+}
+
+/* Footer */
+footer {
+  background-color: #1a1a1a;
+  padding: 60px 0;
+  text-align: center;
+}
+
+.links {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 30px;
+  text-align: left;
+}
+
+.links h4 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #db241d;
+}
+
+.links ul li {
+  margin-bottom: 10px;
+}
+
+.links ul li a {
+  color: #ffffff;
+  transition: color 0.3s ease;
+}
+
+.links ul li a:hover {
+  color: #db241d;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .slider-text h1 {
+    font-size: 50px;
+  }
+  
+  .menu-1,
+  .menu-2 {
+    margin-left: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu label {
+    display: block;
+    position: absolute;
+    right: 20px;
+  }
+  
+  .navbar {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background-color: #080202;
+    padding: 20px;
+  }
+  
+  #menu:checked ~ .navbar {
+    display: flex;
+  }
+  
+  .menu-1,
+  .menu-2 {
+    margin-left: 0;
+    width: 100%;
+  }
+  
+  .logo-2 {
+    margin: 20px 0;
+  }
+  
+  .slider {
+    flex-direction: column;
+  }
+  
+  .slider-text,
+  .slider-img {
+    width: 100%;
+    margin-left: 0;
+    text-align: center;
+  }
+  
+  .slider-text {
+    margin-top: 30px;
+  }
+  
+  .info {
+    flex-direction: column;
+  }
+  
+  .info-img,
+  .info-text {
+    width: 100%;
+  }
+  
+  .info-text {
+    padding-left: 0;
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .slider-text h1 {
+    font-size: 36px;
+  }
+  
+  .btn {
+    display: block;
+    margin-bottom: 15px;
+    width: 100%;
+  }
+  
+  .tabInput + label {
+    display: block;
+    margin-bottom: 5px;
+    width: 100%;
+  }
+}

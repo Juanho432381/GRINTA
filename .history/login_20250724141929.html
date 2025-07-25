@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grinta | Inicio de Sesión</title>
+  <!-- Fuente de Google (ejemplo estilo anime/juegos) -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/grinta-styles.css"> <!-- Estilos principales -->
+</head>
+<body class="login-page">
+  <div class="grinta-logo">
+    <img src="img/grinta-logo.png" alt="Grinta Logo" width="200"> <!-- Ajusta la ruta -->
+  </div>
+
+  <div class="login-container">
+    <div class="login-box">
+      <h1>INICIAR SESIÓN</h1>
+      <form id="loginForm">
+        <div class="input-group">
+          <input type="email" id="email" placeholder="Correo electrónico" required>
+          <span class="input-icon">✉️</span>
+        </div>
+        <div class="input-group">
+          <input type="password" id="password" placeholder="Contraseña" required>
+          <span class="input-icon">🔒</span>
+        </div>
+        <button type="submit" class="grinta-button">ENTRAR</button>
+      </form>
+      <div class="login-links">
+        <a href="register.html" class="link">¿No tienes cuenta? <span>Regístrate</span></a>
+        <a href="#" class="link">¿Olvidaste tu contraseña?</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/auth.js"></script> <!-- Validación JS -->
+</body>
+</html>

@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="es">
+<header>
+    <div class="menu container">
+        <img class="logo-1" src="images/LogoGrinta.jpg" alt="Logo GRINTA">
+        <label for="menu">
+            <input type="checkbox" id="menu" />
+            <img src="images/menu.png" class="menu-icono" alt="Menú">
+        </label>
+
+        <nav class="navbar">
+            <div class="menu-1">
+                <ul>
+                    <li><a href="#">INICIO</a></li>
+                    <li><a href="#">COLECCIONES</a></li>
+                    <li><a href="#">INICIAR SESION</a></li>
+                </ul>
+            </div>
+            
+
+            <img class="logo-2" src="images/LogoGrinta.jpg" alt="Logo GRINTA">
+
+            <div class="menu-2">
+                <ul>
+                    <li><a href="#">Juan Jose </a></li>
+                </ul>
+            </div>
+
+            <div class="socials">
+    <a href="#"><img src="images/s1.svg" alt="Facebook GRINTA"></a>
+    <a href="https://wa.me/573127679853" target="_blank" rel="noopener noreferrer">
+      <img src="images/s5.png" alt="WhatsApp" style="width:25px; height:25px;">
+    </a>
+    <a href="https://www.instagram.com/grinta__oficial" target="_blank" rel="noopener noreferrer">
+        <img src="images/s3.svg" alt="Instagram GRINTA"> <!-- Instagram se mantiene -->
+    </a>
+</div>
+        </nav>
+    </div>
+    
+
+    <!-- SLIDER PRINCIPAL -->
+    <div class="header-content container">
+        <div class="swiper mySwiper-1">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="slider">
+                        <div class="slider-text">
+                            <h1>COLECCIÓN OTOÑO</h1>
+                            <p>Nuevos diseños exclusivos - Envíos gratis</p>
+                            <div class="botones">
+                                <a href="#" class="btn">COMPRAR</a>
+                                <a href="#" class="btn">VER COLECCIÓN</a>
+                            </div>
+                        </div>
+                        <div class="slider-img">
+                            <img src="images/CAMISA6.jpg" alt="Colección Otoño GRINTA">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+</header>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grinta | Login Premium</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    /* Reset y estilos base */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: #000000; /* Fondo negro */
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      overflow: hidden;
+    }
+
+    /* Efecto de partículas (blancas) */
+    .particles {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+    }
+
+    .particle {
+      position: absolute;
+      background: rgba(255, 255, 255, 0.7); /* Partículas blancas */
+      border-radius: 50%;
+      animation: float 15s infinite linear;
+      will-change: transform, opacity;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0) rotate(0deg); opacity: 0; }
+      10% { opacity: 1; }
+      90% { opacity: 1; }
+      100% { transform: translateY(-100vh) rotate(360deg); opacity: 0; }
+    }
+
+    /* Contenedor principal */
+    .login-container {
+      position: relative;
+      z-index: 1;
+      width: 100%;
+      max-width: 420px;
+      padding: 2rem;
+    }
+
+    /* Tarjeta de login */
+    .login-card {
+      background: rgba(0, 0, 0, 0.7); /* Fondo negro semitransparente */
+      -webkit-backdrop-filter: blur(12px);
+      backdrop-filter: blur(12px);
+      border-radius: 20px;
+      padding: 2.5rem;
+      box-shadow: 0 0 30px rgba(255, 255, 255, 0.1); /* Sombra blanca */
+      border: 1px solid rgba(255, 255, 255, 0.2); /* Borde blanco */
+      overflow: hidden;
+      transition: transform 0.4s, box-shadow 0.4s;
+    }
+
+    .login-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 40px rgba(255, 255, 255, 0.15);
+    }
+
+    /* Logo con borde azul */
+    .logo {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .logo img {
+      width: 120px;
+      border: 3px solid #4285f4; /* Borde azul */
+      border-radius: 50%; /* Hace el logo circular */
+      padding: 5px;
+      box-shadow: 0 0 20px rgba(66, 133, 244, 0.5); /* Sombra azul */
+      transition: all 0.3s;
+    }
+
+    .logo img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 30px rgba(66, 133, 244, 0.8);
+    }
+
+    /* Título */
+    .login-title {
+      text-align: center;
+      margin-bottom: 2rem;
+      font-weight: 700;
+      font-size: 1.8rem;
+      color: #fff; /* Texto blanco */
+      letter-spacing: 1px;
+      text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+    }
+
+    /* Formulario */
+    .form-group {
+      position: relative;
+      margin-bottom: 1.5rem;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: 600;
+      color: rgba(255, 255, 255, 0.8);
+    }
+
+    .form-control {
+      width: 100%;
+      padding: 14px 20px;
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      border-radius: 10px;
+      color: #fff;
+      font-size: 1rem;
+      transition: all 0.3s;
+    }
+
+    .form-control:focus {
+      outline: none;
+      border-color: #4285f4; /* Azul al enfocar */
+      background: rgba(255, 255, 255, 0.15);
+      box-shadow: 0 0 0 3px rgba(66, 133, 244, 0.2);
+    }
+
+    /* Botón */
+    .btn {
+      width: 100%;
+      padding: 14px;
+      background: linear-gradient(135deg, #4285f4 0%, #34a853 100%); /* Degradado azul-verde */
+      border: none;
+      border-radius: 10px;
+      color: #fff;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s;
+      margin-top: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .btn:hover {
+      background: linear-gradient(135deg, #34a853 0%, #4285f4 100%);
+      transform: translateY(-2px);
+      box-shadow: 0 10px 20px rgba(66, 133, 244, 0.4);
+    }
+
+    /* Enlaces */
+    .login-links {
+      margin-top: 1.5rem;
+      text-align: center;
+    }
+
+    .login-links a {
+      color: rgba(255, 255, 255, 0.7);
+      text-decoration: none;
+      font-size: 0.9rem;
+      transition: color 0.3s;
+      display: inline-block;
+      margin: 0 10px;
+    }
+
+    .login-links a:hover {
+      color: #4285f4; /* Azul al pasar el mouse */
+    }
+
+    /* Efecto de borde animado */
+    .login-card::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: linear-gradient(
+        to bottom right,
+        transparent 45%,
+        rgba(66, 133, 244, 0.1) 48%,
+        rgba(66, 133, 244, 0.2) 52%,
+        transparent 55%
+      );
+      transform: rotate(30deg);
+      animation: shine 6s infinite linear;
+      will-change: transform;
+    }
+
+    @keyframes shine {
+      0% { transform: rotate(30deg) translate(-30%, -30%); }
+      100% { transform: rotate(30deg) translate(30%, 30%); }
+    }
+
+    /* Responsive */
+    @media (max-width: 480px) {
+      .login-container {
+        padding: 1rem;
+      }
+      .login-card {
+        padding: 1.5rem;
+      }
+    }
+  </style>
+<body>
+  <!-- Efecto de partículas -->
+  <div class="particles" id="particles"></div>
+
+  <!-- Contenedor principal -->
+  <div class="login-container">
+    <div class="login-card">
+      <div class="logo">
+        <img src="images/LogoGrinta.jpg" alt="Grinta Logo">
+      </div>
+      <h1 class="login-title">INICIAR SESIÓN</h1>
+      <form id="loginForm">
+        <div class="form-group">
+          <label for="email">Correo electrónico</label>
+          <input type="email" id="email" class="form-control" placeholder="tucorreo@ejemplo.com" required>
+        </div>
+        <div class="form-group">
+          <label for="password">Contraseña</label>
+          <input type="password" id="password" class="form-control" placeholder="••••••••" required>
+        </div>
+        <button type="submit" class="btn">Acceder</button>
+      </form>
+      <div class="login-links">
+        <a href="register.html">Crear cuenta</a>
+        <a href="forgot.html">¿Olvidaste tu contraseña?</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Efecto de partículas
+    const particlesContainer = document.getElementById('particles');
+    for (let i = 0; i < 30; i++) {
+      const particle = document.createElement('div');
+      particle.classList.add('particle');
+      particle.style.width = `${Math.random() * 5 + 1}px`;
+      particle.style.height = particle.style.width;
+      particle.style.left = `${Math.random() * 100}%`;
+      particle.style.top = `${Math.random() * 100}%`;
+      particle.style.animationDelay = `${Math.random() * 15}s`;
+      particle.style.opacity = Math.random() * 0.5 + 0.1;
+      particlesContainer.appendChild(particle);
+    }
+
+    // Validación del formulario
+    document.getElementById('loginForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      const email = document.getElementById('email').value;
+      const password = document.getElementById('password').value;
+      const btn = document.querySelector('.btn');
+
+      // Simulación de carga
+      btn.innerHTML = '<span class="btn-loader"></span> AUTENTICANDO...';
+      btn.style.opacity = '0.8';
+      btn.disabled = true;
+
+      setTimeout(() => {
+        // Validación simple (sin BD)
+        if (email && password.length >= 6) {
+          btn.innerHTML = '¡ACCESO CONCEDIDO!';
+          btn.style.background = 'linear-gradient(135deg, #00c853 0%, #5efc82 100%)';
+          setTimeout(() => {
+            window.location.href = 'index.html';
+          }, 1000);
+        } else {
+          btn.innerHTML = 'CREDENCIALES INVÁLIDAS';
+          btn.style.background = 'linear-gradient(135deg, #ff1744 0%, #ff616f 100%)';
+          setTimeout(() => {
+            btn.innerHTML = 'Acceder';
+            btn.style.background = 'linear-gradient(135deg, #4285f4 0%, #34a853 100%)';
+            btn.style.opacity = '1';
+            btn.disabled = false;
+          }, 2000);
+        }
+      }, 1500);
+    });
+  </script>
+</body>
+</html>
